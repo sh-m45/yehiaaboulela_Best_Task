@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alegreya", serif;
+}
+
+/* main stylings */
+.btn-main {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: 2px solid white;
+  padding: 15px 20px;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.btn-main:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: 0.7s ease;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: #e0c690;
+}
+.p-main {
+  color: #686868;
+  font-size: 23px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+}
+.p-small {
+  color: #686868;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-x-large {
+  color: #303030;
+  font-family: "Alegreya", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+}
+.font-large {
+  color: #303030;
+  font-family: "Alegreya", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.font-light {
+  color: #f4f2f2;
+}
+.font-dark {
+  color: #303030;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+}
+/* home section */
+
+.home-sec {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("media/drew-coffman-1872.jpg");
+  background-size: cover;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 150px;
+  transition: background 0.5s ease;
+  transition: height 0.5s ease;
+}
+.logo {
+  width: 180px;
+  transition: filter 0.5s ease;
+}
+.scrolled-img {
+  filter: invert(1);
+}
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.986);
+  height: 65px;
+  box-shadow: rgb(97, 97, 97) 0 0 15px 0;
+}
+header ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+header ul li:hover a {
+  color: #e0c690;
+}
+.active-nav {
+  border-top: 3px solid #ac9567;
+}
+
+.home-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 44%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-welcome h1 {
+  padding: 10px;
+}
+.main-btns a {
+  margin: 40px 5px 0;
+  display: inline-block;
+}
+
+.learn-more-btn {
+  background-color: #8e7754;
+  border: 2px solid #8e7754;
+}
+
+.scroll-animation-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.scroll-animation-parent .scroll {
+  width: 30px;
+  height: 50px;
+  border: 2px solid rgb(192, 192, 192);
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.scroll .dott {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(192, 192, 192);
+  border-radius: 100%;
+}
+
+.sec-2-content {
+  width: 90%;
+}
+.img-parent {
+  width: 48%;
+  display: inline-block;
+}
+.img-parent img {
+  width: 95%;
+}
+.who-we-are {
+  width: 48%;
+  display: inline-block;
+  vertical-align: 90px;
+  padding-left: 50px;
+}
+.who-we-are h1 {
+  padding: 20px 0;
+}
+
+.featurs-parent {
+  padding-top: 15px;
+}
+.feature {
+  padding: 7px 0;
+}
+.feature i {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  color: #8e7754e2;
+  border: 1px solid #8e775492;
+  border-radius: 100%;
+}
+.feature p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+.sec-3 {
+  background-color: #f8f8f8;
+}
+.sec-3-content {
+  width: 90%;
+}
+
+.our-location {
+  width: 48%;
+  display: inline-block;
+  vertical-align: 130px;
+}
+
+.sec-3-content .img-parent {
+  padding-left: 30px;
+}
+
+.sec-4-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-parent {
+  width: 100%;
+  margin-top: 30px;
+}
+.cards-parent .card {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.cards-parent .card img {
+  width: 90%;
+}
+
+.cards-parent .card h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.sec-5 {
+  background-color: #f4f2f2;
+}
+.sec-5-content {
+  width: 90%;
+}
+
+.contact-info,
+.map-parent {
+  width: 48%;
+  display: inline-block;
+}
+.contact-info {
+  vertical-align: 60px;
+}
+.contact-details div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-details div i {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #8e7754;
+  color: white;
+  border-radius: 100%;
+}
+
+.contact-details div p {
+  padding-left: 20px;
+}
+
+.map {
+  width: 95%;
+  height: 600px;
+  margin-left: 20px;
+  border: 2px solid #303030;
+}
+.extra-links {
+  background-color: #403d38;
+}
+.extra-links-contetnt {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-us,
+.why-we-are-special,
+.openinig-hours,
+.contact-foot {
+  width: 23%;
+}
+.h1-footer {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.p-footer {
+  font-family: "Alegreya Sans", sans-serif;
+  color: #969696;
+}
+.about-us p {
+  line-height: 30px;
+}
+li {
+  list-style: none;
+}
+.why-we-are-special ul li,
+.openinig-hours ul li,
+.contact-foot ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #96969637;
+}
+
+.p-footer.first {
+  padding-top: 0;
+}
+.p-footer.last {
+  border-bottom: none;
+}
+.contact-foot {
+  background-image: url(media/pngwing.com.png);
+  background-size: cover;
+}
+.contact-foot ul li {
+  display: flex;
+  align-items: flex-start;
+}
+.contact-foot ul li p {
+  padding-left: 20px;
+}
+
+.footer {
+  background-color: #353330;
+  flex-direction: column;
+}
+
+.footer p {
+  padding: 30px;
+}
+
+.footer-icons i {
+  font-size: 25px;
+  padding: 10px;
+  background-color: #403d38;
+  color: #686868;
+  border-radius: 100%;
+  margin: 3px;
+  cursor: pointer;
+}
+
+/* fixed elemenit */
+
+.fixed-nav {
+  width: 40px;
+  height: 95px;
+  background-color: white;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fixed-nav i {
+  font-size: 20px;
+  color: #686868;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.fixed-nav i:hover {
+  color: rgb(120, 120, 209);
+}
+
+.return-home-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #6868689a;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 10px 10px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid #808080;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  display: none;
+  transition: opacity 0.4s ease;
+}
+
+.return-home-btn-active {
+  display: flex;
+}
+
+.return-home-btn i {
+  color: white;
+}
+
+.return-home-btn:hover {
+  background-color: #686868;
+}
